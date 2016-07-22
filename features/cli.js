@@ -19,7 +19,7 @@ module.exports = function () {
 	});
 
 	this.When(/^I pipe it through the cli$/, function (callback) {
-		const cucumberPath = os.arch() === "win32" ?
+		const cucumberPath = os.platform() === "win32" ?
 			"../node_modules/.bin/cucumber-js.cmd" :
 			"../node_modules/.bin/cucumber-js";
 		const cucumberProcess = spawn(path.join(__dirname, cucumberPath), [
