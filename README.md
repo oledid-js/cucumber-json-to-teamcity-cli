@@ -5,7 +5,7 @@
 ## Install
 
 ```
-$ npm install --save https://github.com/oledid/cucumber-json-to-teamcity-cli.git
+$ npm install --save cucumber-json-to-teamcity-cli
 ```
 
 
