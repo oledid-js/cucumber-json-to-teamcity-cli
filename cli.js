@@ -1,3 +1,4 @@
+#!/usr/bin/env node
 "use strict";
 
 const api = require("cucumber-json-to-teamcity");
@@ -13,5 +14,5 @@ process.stdin.on("data", buffer => {
 });
 
 process.stdin.on("end", () => {
-	console.log(api(content));
+	console.log(api(content).join("\n").trim());
 });
