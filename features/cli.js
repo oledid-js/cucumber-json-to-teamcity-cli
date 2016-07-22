@@ -1,6 +1,7 @@
 "use strict";
 
 const path = require("path");
+const os = require("os");
 const childProcess = require("child_process");
 const expect = require("chai").expect;
 
@@ -18,7 +19,10 @@ module.exports = function () {
 	});
 
 	this.When(/^I pipe it through the cli$/, function (callback) {
-		const cucumberProcess = spawn(path.join(__dirname, "../node_modules/.bin/cucumber-js.cmd"), [
+		const cucumberPath = os.arch() === "win32" ?
+			"../node_modules/.bin/cucumber-js.cmd" :
+			"../node_modules/.bin/cucumber-js";
+		const cucumberProcess = spawn(path.join(__dirname, cucumberPath), [
 			"features/mock.feature",
 			"--format",
 			"json"
