@@ -1,6 +1,6 @@
 {
   "name": "cucumber-json-to-teamcity-cli",
-  "version": "0.0.4",
+  "version": "0.0.5",
   "description": "Pipe a cucumber.js json-report to teamcity service messages",
   "bin": {
     "cucumber-json-to-teamcity": "cli.js"
@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/oledid/cucumber-json-to-teamcity-cli#readme",
   "dependencies": {
-    "cucumber-json-to-teamcity": "0.0.3"
+    "cucumber-json-to-teamcity": "~0.0.4"
   },
   "devDependencies": {
     "chai": "^3.5.0",
