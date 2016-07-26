@@ -60,7 +60,7 @@ module.exports = function () {
 	});
 
 	this.Then(/^the output should be TeamCity service messages$/, function (callback) {
-		expect(this.output.split("\n")[0]).to.equal("##teamcity[testSuiteStarted name='A mock feature']");
+		expect(this.output.split("\n")[0]).to.equal("##teamcity[testSuiteStarted name='|[Feature|] A mock feature']");
 		callback();
 	});
 };
