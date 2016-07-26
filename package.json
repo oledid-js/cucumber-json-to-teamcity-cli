@@ -25,7 +25,7 @@
   },
   "homepage": "https://github.com/oledid/cucumber-json-to-teamcity-cli#readme",
   "dependencies": {
-    "cucumber-json-to-teamcity": "github:oledid/cucumber-json-to-teamcity#f3307286be23122370ee5fee5580cd81294ac7dc"
+    "cucumber-json-to-teamcity": "~0.2.0"
   },
   "devDependencies": {
     "chai": "^3.5.0",
