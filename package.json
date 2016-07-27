@@ -30,6 +30,8 @@
   "devDependencies": {
     "chai": "^3.5.0",
     "cucumber": "^1.2.1",
+    "tap-teamcity": "^1.2.0",
+    "teamcity-build-number-cli": "0.0.1",
     "xo": "^0.16.0"
   },
   "xo": {
