@@ -1,17 +1,18 @@
 {
   "name": "cucumber-json-to-teamcity-cli",
-  "version": "0.2.0",
+  "version": "0.2.1",
   "description": "Pipe a cucumber.js json-report to teamcity service messages",
   "bin": {
     "cucumber-json-to-teamcity": "cli.js"
   },
   "scripts": {
     "test": "npm run xo && cucumber-js features/cli.feature",
-    "xo": "xo **/*.js"
+    "xo": "xo **/*.js",
+    "prepublish": "in-publish && npm run test || not-in-publish"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/oledid/cucumber-json-to-teamcity-cli.git"
+    "url": "git+https://github.com/oledid-js/cucumber-json-to-teamcity-cli.git"
   },
   "keywords": [
     "cucumber",
@@ -21,17 +22,17 @@
   "author": "Ole Morten Didriksen",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/oledid/cucumber-json-to-teamcity-cli/issues"
+    "url": "https://github.com/oledid-js/cucumber-json-to-teamcity-cli/issues"
   },
-  "homepage": "https://github.com/oledid/cucumber-json-to-teamcity-cli#readme",
+  "homepage": "https://github.com/oledid-js/cucumber-json-to-teamcity-cli#readme",
   "dependencies": {
-    "cucumber-json-to-teamcity": "~0.2.0"
+    "cucumber-json-to-teamcity": "^0.2.6"
   },
   "devDependencies": {
     "chai": "^3.5.0",
     "cucumber": "^1.2.1",
+    "in-publish": "^2.0.0",
     "tap-teamcity": "^1.2.0",
-    "teamcity-build-number-cli": "0.0.1",
     "xo": "^0.16.0"
   },
   "xo": {
