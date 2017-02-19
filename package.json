@@ -1,6 +1,6 @@
 {
   "name": "cucumber-json-to-teamcity-cli",
-  "version": "0.2.2",
+  "version": "0.2.3",
   "description": "Pipe a cucumber.js json-report to teamcity service messages",
   "bin": {
     "cucumber-json-to-teamcity": "cli.js"
